@@ -9,6 +9,12 @@ def test_dark_theme_by_time():
     # TODO переключите темную тему в зависимости от времени суток (с 22 до 6 часов утра - ночь)
 
     is_dark_theme = None
+
+    if current_time.hour >= 22:
+        is_dark_theme = True
+    elif current_time.hour <= 6:
+        is_dark_theme = True
+
     assert is_dark_theme is True
 
 
