@@ -94,6 +94,7 @@ def test_find_suitable_user():
 def readable_name(func, **kwargs):
     fix_func_name = func.__name__.replace("_", " ").title()
     func_args = ", ".join([f"{value}" for value in kwargs.values()])
+    print(f"{fix_func_name} [{func_args}]")
     return f"{fix_func_name} [{func_args}]"
 
 
