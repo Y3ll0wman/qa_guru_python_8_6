@@ -102,7 +102,6 @@ def test_readable_function():
     open_browser(browser_name="Chrome")
     go_to_companyname_homepage(page_url="https://companyname.com")
     find_registration_button_on_login_page(page_url="https://companyname.com/login", button_text="Register")
-    readable_name(test_readable_function)
 
 
 def open_browser(browser_name):
